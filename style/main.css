@@ -9298,6 +9298,13 @@ footer p {
   margin-top: 10px;
 }
 
+.page-details h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
 .page-details .store-gallery {
   margin-top: 20px;
 }
@@ -9310,6 +9317,127 @@ footer p {
 }
 .page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
   border: 2px solid #ff7158;
+}
+.page-details .store-heading {
+  margin-bottom: 10px;
+}
+.page-details .store-heading h1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0c0d36;
+  margin-bottom: 0;
+}
+.page-details .store-heading .owner {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #979797;
+}
+.page-details .store-heading .price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ff7158;
+  margin-bottom: 10px;
+}
+.page-details .store-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #525253;
+}
+.page-details .store-review .media img {
+  max-width: 50px;
+}
+.page-details .store-review .media-body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  color: #525252;
+  margin-bottom: 20px;
+}
+.page-details .store-review .media-body h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  /* identical to box height, or 29px */
+  color: #0C0D36;
+}
+
+.store-cart h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #0C0D36;
+  margin-top: 18px;
+}
+.store-cart .product-itle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #0C0D36;
+}
+.store-cart .product-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #979797;
+}
+.store-cart .table-cart {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.store-cart .table-cart th {
+  font-weight: 200;
+}
+.store-cart .table-cart .cart-image {
+  border-radius: 8px;
+  max-height: 85px;
+}
+.store-cart .table-cart .btn-remove-cart {
+  margin-top: 18px;
+  color: #fff;
+  background-color: #fc5e84;
+  border-color: transparent;
+}
+.store-cart .table-cart .btn-remove-cart:hover {
+  color: #fff;
+  background-color: #fb3867;
+  border-color: rgba(0, 0, 0, 0);
+}
+.store-cart .table-cart .btn-remove-cart:focus, .store-cart .table-cart .btn-remove-cart.focus {
+  color: #fff;
+  background-color: #fb3867;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.store-cart .table-cart .btn-remove-cart.disabled, .store-cart .table-cart .btn-remove-cart:disabled {
+  color: #fff;
+  background-color: #fc5e84;
+  border-color: transparent;
+}
+.store-cart .table-cart .btn-remove-cart:not(:disabled):not(.disabled):active, .store-cart .table-cart .btn-remove-cart:not(:disabled):not(.disabled).active, .show > .store-cart .table-cart .btn-remove-cart.dropdown-toggle {
+  color: #fff;
+  background-color: #fb2c5e;
+  border-color: rgba(0, 0, 0, 0);
+}
+.store-cart .table-cart .btn-remove-cart:not(:disabled):not(.disabled):active:focus, .store-cart .table-cart .btn-remove-cart:not(:disabled):not(.disabled).active:focus, .show > .store-cart .table-cart .btn-remove-cart.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .component-categories {
@@ -9377,10 +9505,10 @@ footer p {
   padding-bottom: 10px;
 }
 .store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
-  padding-left: 1, 5rem;
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.store-breadcrumbs .breadcrumb-item .active {
+.store-breadcrumbs .breadcrumb-item.active {
   font-weight: 300;
   color: #0c0d36;
 }
@@ -9393,5 +9521,11 @@ footer p {
 }
 
 .slide-fade-leave-active {
-  transition: all 0.1s cubic-bezier();
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

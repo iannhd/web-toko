@@ -8,11 +8,11 @@
     }
 
     .breadcrumb-item + .breadcrumb-item::before {
-        padding-left: 1,5rem;
+        padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
-    .breadcrumb-item .active {
+    .breadcrumb-item.active {
         font-weight: 300;
         color: #0c0d36;
     }
