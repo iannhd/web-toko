@@ -56,18 +56,33 @@
             margin-left: 0;
             margin-top: 0;
         }
-    }
-
-    #page-content-wrapper {
-        min-width: 0;
-        width: 100%;
-    }
-
-    #wrapper {
-        &.toggled {
-            #sidebar-wrapper {
-                margin-left: 15px;
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+    
+        #wrapper {
+            &.toggled {
+                #sidebar-wrapper {
+                    margin-left: 15px;
+                }
             }
         }
     }
+
+
+    .section-content {
+        margin-top: 100px;
+        
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
 }
