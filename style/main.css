@@ -9527,6 +9527,7 @@ footer p {
 
 .page-dashboard #page-content-wrapper {
   background: #f5f5fb;
+  min-height: 100vh;
   min-width: 100vw;
 }
 .page-dashboard #sidebar-wrapper {
@@ -9588,11 +9589,37 @@ footer p {
     margin-left: 20px;
   }
 }
-@media (min-width: 768px) {
-  .page-dashboard {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
+.page-dashboard .section-content h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0C0D36;
+}
+.page-dashboard .section-content .dashboard-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0C0D36;
+}
+.page-dashboard .section-content .dashboard-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9191A9;
+}
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9191A9;
+  border-radius: 0;
+}
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0C0D36;
+  border-bottom: 2px solid #0C0D36;
+  background: none;
 }
 
 .component-categories {
@@ -9669,6 +9696,37 @@ footer p {
 }
 .store-breadcrumbs a {
   color: #979797;
+}
+
+.card {
+  background: #FEFEFE;
+  box-shadow: 0px 4px 15px #f1f1f8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+.card .dashboard-card-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #C5C5C5;
+}
+.card .dashboard-card-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0C0D36;
+}
+
+.card-list {
+  margin-bottom: 10px;
+}
+.card-list .card-body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  /* identical to box height */
+  color: #0C0D36;
 }
 
 .slide-fade-enter-active {

@@ -1,6 +1,7 @@
 .page-dashboard {
     #page-content-wrapper {
         background: #f5f5fb;
+        min-height: 100vh;
         min-width: 100vw;
     }
 
@@ -78,11 +79,46 @@
             margin-top: 20px;
             margin-left: 20px;
         }
-    }
 
-    @include media-breakpoint-up(md) {
-        margin-top: 20px;
-        margin-left: 20px;
+        h5 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+
+            color: #0C0D36;
+        }
+
+        .dashboard-title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #0C0D36;
+        }
+        .dashboard-subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9191A9;
+        }
+
+        .nav-pills {
+            .nav-link {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 27px; 
+                color: #9191A9;
+                border-radius: 0;
+
+                &.active {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #0C0D36;
+                    border-bottom: 2px solid #0C0D36;
+                    background: none;
+                }
+            }
+        }
+
     }
     
 }
